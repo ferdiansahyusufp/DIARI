@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>DIARI TRAVEL — Cerita Perjalananmu Dimulai di Sini</title>
+  <meta name="description" content="DIARI TRAVEL — Agen perjalanan wisata dengan gaya elegan dan minimalis. Temukan paket liburan estetik ke Asia, Eropa & Amerika.">
+  <meta name="theme-color" content="#A3B19B">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dark-mode.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      
+      <a href="#" class="logo-link" id="logoLink" title="Klik: Beranda | Klik 2x: Mode Gelap" aria-label="DIARI TRAVEL - Beranda">
+        <h1 class="logo-text" id="logoText">DIARI TRAVEL</h1>
+      </a>
+
+      <nav class="nav-main" aria-label="Navigasi utama">
+        <a href="#hero"          class="nav-link">Beranda</a>
+        <a href="#destinations"  class="nav-link">Destinasi</a>
+        <a href="#why"           class="nav-link">Filosofi</a>
+        <a href="#contact"       class="nav-link">Kontak</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <a href="#hero"          class="drawer-link">Beranda</a>
+      <a href="#destinations"  class="drawer-link">Destinasi</a>
+      <a href="#why"           class="drawer-link">Filosofi</a>
+      <a href="#contact"       class="drawer-link">Kontak</a>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Crafting Beautiful Memories</p>
+      <h2 class="hero-title">Perjalanan Estetik, <br>Tanpa Beban Pikiran.</h2>
+      <p class="hero-subtitle">Kurasi perjalanan personal ke destinasi terbaik dunia dengan gaya yang santai, intim, dan elegan.</p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn--primary">Eksplorasi Jurnal Kami</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">Jelajahi</span>
+    </div>
+  </section>
+
+  <section class="section destinations" id="destinations">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Halaman Berikutnya</p>
+        <h2 class="section-title">Kurasi Destinasi</h2>
+      </header>
+
+      <div class="filter-tabs" id="filterContainer" role="tablist">
+        <button class="filter-tab active" data-category="all" role="tab">Semua</button>
+        <button class="filter-tab" data-category="asia" role="tab">Asia</button>
+        <button class="filter-tab" data-category="europe" role="tab">Eropa</button>
+      </div>
+
+      <div class="package-grid" id="packages">
+        </div>
+    </div>
+  </section>
+
+  <section class="section why-us" id="why">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-eyebrow">Filosofi Kami</p>
+        <h2 class="section-title">Mengapa Diari Travel?</h2>
+      </header>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon-lucide"><i data-lucide="feather"></i></div>
+          <h3>Perjalanan Ringan</h3>
+          <p>Kami mendesain jadwal yang tidak terburu-buru. Berjalan perlahan, meresapi setiap sudut kota dan secangkir kopi di sore hari.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-lucide"><i data-lucide="camera"></i></div>
+          <h3>Estetika Visual</h3>
+          <p>Pemilihan akomodasi dan rute yang memanjakan mata. Setiap tempat adalah latar belakang sempurna untuk ceritamu.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon-lucide"><i data-lucide="coffee"></i></div>
+          <h3>Teman Seperjalanan</h3>
+          <p>Grup kecil yang intim. Kami bukan sekadar pemandu, tapi teman yang memastikan kenyamananmu adalah prioritas utama.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <p class="section-eyebrow">Mari Berbincang</p>
+        <h2 class="contact-title">Tulis Ceritamu Bersama Kami</h2>
+        <p class="contact-desc">Konsultasikan destinasi impianmu. Kami akan merangkai perjalanannya untukmu.</p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Diari%20Travel,%20saya%20ingin%20berdiskusi%20soal%20rencana%20perjalanan." class="btn btn--whatsapp" target="_blank">
+          <i data-lucide="message-circle"></i> Mulai Obrolan
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <h2 class="logo-text" style="color:var(--color-primary); font-size:1.2rem;">DIARI TRAVEL</h2>
+          <p class="footer-about">Merekam jejak keindahan dunia dengan gaya perjalanan yang elegan, santai, dan penuh makna.</p>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="footer-heading">Menyapa Kami</h4>
+          <address>
+            <ul class="footer-contact-list">
+              <li><i data-lucide="map-pin"></i> <span>Jakarta Selatan, Indonesia</span></li>
+              <li><i data-lucide="smartphone"></i> <a href="#">+62 812-3456-7890</a></li>
+              <li><i data-lucide="mail"></i> <a href="#">hello@diaritravel.com</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 DIARI TRAVEL. Estetika dalam setiap langkah.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="darkModeToast" hidden><span id="toastMsg"></span></div>
+
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
