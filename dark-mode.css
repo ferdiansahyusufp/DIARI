@@ -1,0 +1,52 @@
+/* ============================================================
+   DIARI TRAVEL — dark-mode.css
+   Soft & Elegant Dark Mode Overrides
+   ============================================================ */
+
+[data-theme="dark"] {
+  --color-bg:         #1A1A18; /* Soft charcoal */
+  --color-surface:    #222220; /* Slightly lighter charcoal */
+  --color-surface-2:  #2A2A28;
+  --color-text:       #EAE8E3; /* Soft off-white */
+  --color-text-muted: #A0A09A;
+  --color-text-light: #7A7A75;
+  --color-primary:    #B4C2A9; /* Lighter, glowing sage */
+  --color-primary-dk: #98A68F;
+  --color-accent:     #E6D6C8; 
+  --color-border:     #333330;
+  --color-card-bg:    #222220;
+
+  --shadow-card:  0 8px 30px rgba(0,0,0,.2);
+  --shadow-hover: 0 12px 40px rgba(0,0,0,.4);
+}
+
+[data-theme="dark"] .site-header {
+  background: rgba(26,26,24,.85);
+}
+
+[data-theme="dark"] .hero-orb {
+  opacity: 0.15;
+}
+
+[data-theme="dark"] .toast {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+[data-theme="dark"] .modal-overlay {
+  background: rgba(0,0,0,.7);
+}
+
+/* Transisi halus untuk seluruh elemen warna */
+*:not(img) {
+  transition:
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    color 0.2s ease,
+    box-shadow 0.4s ease;
+}
+
+a, button, .btn, .filter-tab, .pkg-card, .why-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
